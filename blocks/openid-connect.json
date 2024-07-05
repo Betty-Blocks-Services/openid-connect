@@ -1,0 +1,11 @@
+{
+  "dependencies": ["jwt-decode"],
+  "functions": [
+    "getAccessAndIdToken 1.0",
+    "decodeIdToken 1.0",
+    "getUserDataFromIdToken 1.0",
+    "checkRecordPresent 1.0",
+    "getUseridFromJwt 1.0"
+  ],
+  "includes": []
+}

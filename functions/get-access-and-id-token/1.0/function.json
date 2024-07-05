@@ -1,0 +1,102 @@
+{
+  "description": "Get Access and ID token from Microsoft Oauth 2.0 Service",
+  "label": "getAccessAndIdToken",
+  "category": "Authentication",
+  "icon": {
+    "color": "Orange",
+    "name": "UserKeyIcon"
+  },
+  "options": [
+    {
+      "meta": {
+        "type": "Text"
+      },
+      "name": "tokenEndpoint",
+      "label": "Token endpoint",
+      "info": "The url endpoint to fetch the token",
+      "advanced": false,
+      "configuration": {
+        "placeholder": "https://login.microsoftonline.com/common/oauth2/token"
+      }
+    },
+    {
+      "meta": {
+        "type": "Text"
+      },
+      "name": "redirectUri",
+      "label": "Redirect URI",
+      "info": "The Redirect URI for the oauth client",
+      "advanced": false,
+      "configuration": {
+        "placeholder": "https://example.betty.app/oauth/callback"
+      }
+    },
+    {
+      "meta": {
+        "type": "Text"
+      },
+      "name": "clientId",
+      "label": "Client ID",
+      "info": "The Client ID of the oauth service",
+      "advanced": false
+    },
+    {
+      "meta": {
+        "type": "Text"
+      },
+      "name": "clientSecret",
+      "label": "Client Secret",
+      "info": "The Client Secret of the oauth service",
+      "advanced": false,
+      "configuration": {
+        "placeholder": "Betty Blocks"
+      }
+    },
+    {
+      "meta": {
+        "type": "Text"
+      },
+      "name": "code",
+      "label": "Authorization code",
+      "info": "The authorization code",
+      "advanced": false,
+      "configuration": {
+        "placeholder": "Betty Blocks"
+      }
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      },
+      "name": "accessToken",
+      "label": "Access token as",
+      "info": "The access token as the result."
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      },
+      "name": "idToken",
+      "label": "id token as",
+      "info": "The id token as the result."
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      },
+      "name": "refreshToken",
+      "label": "refresh token as",
+      "info": "The refresh token as the result."
+    }
+  ],
+  "yields": "NONE"
+}

@@ -1,0 +1,32 @@
+{
+  "description": "Decodes an openid connect id token to a readable object",
+  "label": "Decode an OpenID connect ID token",
+  "category": "Authentication",
+  "icon": {
+    "color": "Teal",
+    "name": "UserArrowInIcon"
+  },
+  "options": [
+    {
+      "meta": {
+        "type": "Text"
+      },
+      "name": "idToken",
+      "label": "ID Token",
+      "info": "The ID token that has to be decoded",
+      "advanced": false
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Object"
+        }
+      },
+      "name": "decodedIdToken",
+      "label": "The decoded id token as",
+      "info": "The decoded token as the result."
+    }
+  ],
+  "yields": "NONE"
+}

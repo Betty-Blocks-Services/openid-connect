@@ -1,0 +1,81 @@
+{
+  "description": "Fetch the user data from id token and put them in variables",
+  "label": "Get User Data from ID Token",
+  "category": "Authentication",
+  "icon": {
+    "color": "Teal",
+    "name": "UserArrowInIcon"
+  },
+  "options": [
+    {
+      "meta": {
+        "type": "Object"
+      },
+      "name": "idToken",
+      "label": "ID Token",
+      "info": "The decoded ID token",
+      "advanced": false
+    },
+    {
+      "meta": {
+        "type": "Text"
+      },
+      "name": "usernameAttribute",
+      "label": "Username Attribute",
+      "info": "The name of the attribute in the ID token that contains the username",
+      "advanced": false
+    },
+    {
+      "meta": {
+        "type": "Text"
+      },
+      "name": "nameAttribute",
+      "label": "Name Attribute",
+      "info": "The name of the attribute in the ID token that contains the display name of the user",
+      "advanced": false
+    },
+    {
+      "meta": {
+        "type": "Text"
+      },
+      "name": "hdAttribute",
+      "label": "Domain Name Attribute",
+      "info": "The name of the attribute in the ID token that contains the domain name of the user",
+      "advanced": false
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      },
+      "name": "username",
+      "label": "The username as",
+      "info": "The username as the result."
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      },
+      "name": "name",
+      "label": "The name as",
+      "info": "The name of the user as the result."
+    },
+    {
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      },
+      "name": "domain",
+      "label": "The domain name as",
+      "info": "The domain name of the user as the result."
+    }
+  ],
+  "yields": "NONE"
+}
